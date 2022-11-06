@@ -1,0 +1,6 @@
+secrets.yml
+*.log
+.env
+.idea
+tmp
+.docker-sync
