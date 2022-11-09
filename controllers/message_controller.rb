@@ -30,6 +30,8 @@ module Controllers
         Operations::Start.new(bot: @bot, message: @message).perform
       when 'stop'
         Operations::Stop.new(bot: @bot, message: @message).perform
+      when 'search'
+        Operations::Search.new(bot: @bot, message: @message).perform
       when 'help'
         Operations::Help.new(bot: @bot, message: @message).perform
       when 'support'

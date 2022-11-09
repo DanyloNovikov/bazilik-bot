@@ -28,8 +28,8 @@ module Operations
         text: "Hi! #{@message.from.first_name}",
         reply_markup: Telegram::Bot::Types::ReplyKeyboardMarkup.new(
           keyboard: [
-            ['search 🔎', 'random 🎲'],
-            ['help 🆘', 'support 💸'],
+            ['search_by 🔎'],
+            ['help 🆘', 'profile'],
             ['stop ⏹']
           ]
         )

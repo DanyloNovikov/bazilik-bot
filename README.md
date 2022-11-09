@@ -1,4 +1,4 @@
-# Jack bot (boilerplate for [telegram-bot-ruby](https://github.com/atipugin/telegram-bot-ruby))
+# Bazilik bot (boilerplate for [telegram-bot-ruby](https://github.com/atipugin/telegram-bot-ruby))
 
 Telegram bot for search alcohol drink and cocktail. An example with comfortable scaling and the ability to connect to the postgresql database through the ActiveRecord library.
 
@@ -104,7 +104,7 @@ class MessageController < Controllers::BaseController
       Operations::Stop.new(bot: @bot, message: @message).perform
     when 'random'
       Operations::Random.new(bot: @bot, message: @message).perform
-    when 'search'
+    when 'search_by'
       Operations::Search.new(bot: @bot, message: @message).perform
     when 'help'
       Operations::Help.new(bot: @bot, message: @message).perform
